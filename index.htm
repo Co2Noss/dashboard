@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TNI Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="skin-blue fixed sidebar-mini"><portal ng-version="5.1.0"><div class="wrapper" style="">
+	<header class="main-header">
+		<span class="logo">
+			<span class="logo-mini">tNi</span>
+			<span class="logo-lg">
+				<strong>tele</strong>Network
+			</span>
+		</span>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a class="sidebar-toggle" data-toggle="offcanvas" href="javascript:void(0)" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
+		</nav>
+	</header>
+	<aside class="main-sidebar">
+		<div class="sidebar">
+
+		</div>
+	</aside>
+
+	<div class="content-wrapper" style="height: 100%;">
+		<div style="height: 100%; overflow: auto;">
+			<error-message><!---->
+</error-message>
+			<router-outlet></router-outlet><blank></blank>
+		</div>
+	</div>
+	<portal-filter><div>
+	<aside class="control-sidebar control-sidebar-dark" style="position: fixed; max-height: 100%; overflow: auto; padding-bottom: 50px;">
+		<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+			<li>
+				<a data-toggle="control-sidebar" href="javascript:void(0)">
+					<i class="fa fa-times"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="control-sidebar-filter-tab">
+				<form method="post" name="filterForm" novalidate="" class="ng-untouched ng-pristine ng-valid">
+					<h3 class="control-sidebar-heading">
+						Default
+					</h3>
+
+					<!---->
+					<fieldset>
+						<div class="form-group">
+							<button class="btn btn-default">Submit</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</aside>
+	<div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+</div>
+</portal-filter>
+</div>
+<!---->
+</portal><script type="text/javascript" src="js/inline.js"></script><script type="text/javascript" src="js/polyfills.js"></script></body>
+
+</html>
