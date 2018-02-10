@@ -7,9 +7,12 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
 <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 </head>
 
-<body class="skin-blue fixed sidebar-mini"><portal ng-version="5.1.0"><div class="wrapper" style="">
+<body class="skin-blue fixed sidebar-mini">
+    <portal ng-version="5.1.0">
+    <div id="wrapper" class="toggle">
 	<header class="main-header">
 		<span class="logo">
 			<span class="logo-mini">tNi</span>
@@ -18,15 +21,40 @@
 			</span>
 		</span>
 		<nav class="navbar navbar-static-top" role="navigation">
-			<a class="sidebar-toggle" data-toggle="offcanvas" href="javascript:void(0)" role="button">
-				<span class="sr-only">Toggle navigation</span>
+			<a id="menu-toggle" class="sidebar-toggle" data-toggle="offcanvas" href="#menu-toggle" role="button">
+				<button class="sr-only"></button>
 			</a>
 		</nav>
 	</header>
-	<aside class="main-sidebar">
-		<div class="sidebar">
-
-		</div>
+	<aside id="sidebar-wrapper" class="main-sidebar">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Tracker KB</a>
+                </li>
+                <li>
+                    <a href="#">LUBR</a>
+                </li>
+                <li>
+                    <a href="#">Note Template</a>
+                </li>
+                <li>
+                    <a href="#">Dynamics</a>
+                </li>
+                <li>
+                    <a href="#">LOLA</a>
+                </li>
+                <li>
+                    <a href="#">Sales Form</a>
+                </li>
+                <li>
+                    <a href="#">#</a>
+                </li>
+            </ul>
 	</aside>
 
 	<div class="content-wrapper" style="height: 100%;">
@@ -35,7 +63,7 @@
 </error-message>
 			<router-outlet></router-outlet><blank></blank>
 		</div>
-	</div>
+	
 	<portal-filter><div>
 	<aside class="control-sidebar control-sidebar-dark" style="position: fixed; max-height: 100%; overflow: auto; padding-bottom: 50px;">
 		<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
@@ -67,6 +95,13 @@
 </portal-filter>
 </div>
 <!---->
-</portal><script type="text/javascript" src="js/inline.js"></script><script type="text/javascript" src="js/polyfills.js"></script></body>
+</portal><script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    </body>
 
 </html>
