@@ -12,7 +12,7 @@
 
 <body class="skin-blue fixed sidebar-mini">
     <portal ng-version="5.1.0">
-    <div id="wrapper" class="toggle">
+    <div id="wrapper">
 	<header class="main-header">
 		<span class="logo">
 			<span class="logo-mini">tNi</span>
@@ -99,6 +99,7 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
+        e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
     </script>

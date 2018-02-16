@@ -20,7 +20,7 @@ body {
   padding-left: 250px;
 }
 
-#main-sidebar {
+#sidebar-wrapper {
   z-index: 1000;
   position: fixed;
   left: 250px;
@@ -35,7 +35,7 @@ body {
   transition: all 0.5s ease;
 }
 
-#wrapper.toggled #main-sidebar {
+#wrapper.toggled #sidebar-wrapper {
   width: 250px;
 }
 
@@ -105,10 +105,10 @@ body {
   #wrapper.toggled {
     padding-left: 250px;
   }
-  #main-sidebar {
+  #sidebar-wrapper {
     width: 0;
   }
-  #wrapper.toggled #main-sidebar {
+  #wrapper.toggled #sidebar-wrapper {
     width: 250px;
   }
   #page-content-wrapper {
